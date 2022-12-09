@@ -1,0 +1,58 @@
+h2{
+    padding-top: 5%;
+}
+
+#experienceContentContainer{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px 0px;
+    box-sizing: content-box;
+    box-shadow: 0px 2px 5px 2px rgb(0,0,0,0.5);
+}
+
+.experienceItem{
+    font-size: 22px;
+    list-style-type: square;
+    padding: 12px 5% 0px 0px;
+}
+.experienceName{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.experienceLogo{
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+.experienceItem:nth-child(n+2){
+    border-top: black 1px solid;
+}
+.experienceItem:last-child{
+    padding-bottom: 0px;
+}
+
+
+
+
+.experienceDescription{
+    padding: 12px 0px;
+}
+
+
+@media screen and (max-width: 1192px){
+    .experienceItem{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 964px){
+    .experienceItem{
+        font-size: 14px;
+    }
+}
+
+

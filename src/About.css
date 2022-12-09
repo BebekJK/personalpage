@@ -1,0 +1,74 @@
+
+.innerContentContainer{
+    /* aspect-ratio: 3/1; */
+    display: flex;
+    
+    
+}
+#innerParagraph{
+    display: flex;
+    width: 60%;
+    padding: 5% 5%;
+    font-size: 16px;
+    background-color: rgba(255,255,255);
+
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
+    border-radius: 10px 0px 10px 0px;
+    box-shadow: 0px 2px 5px 2px rgb(0,0,0,0.5);
+    height: auto;
+}
+p{
+    align-items: center;
+}
+ul{
+    text-align: left;
+}
+#skills{
+    text-decoration: unCderline;
+    margin-bottom: 0px;
+}
+#innerContentPhoto{
+    width: 40%;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/White_domesticated_duck%2C_stretching.jpg/2048px-White_domesticated_duck%2C_stretching.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5%;
+    height: auto;
+}
+
+@media screen and (max-width: 1192px){
+    #innerParagraph{
+      font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 964px){
+    .content{
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .innerContentContainer{
+        /* aspect-ratio: 1/2; */
+        /* background-color: red; */
+        width:100%;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        
+    }
+    #innerParagraph{
+        width: 90%;
+        padding: none;
+        margin: none;
+
+    }
+    #innerContentPhoto{
+        aspect-ratio: 2/1;
+        width: 80%;
+    }
+}

@@ -1,25 +1,52 @@
+import react, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Photo from './Photo.js';
+import LinkButton from './LinkButton.js';
+import Contact from './Contact.js'
+import Content from './Content.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  constructor(){
+    super();
+    this.state = {
+      buttonType: [
+        {
+          name: "Home"
+        },
+        {
+          name: "About"
+        },
+        {
+          name: "Achievement"
+        },
+        {
+          name: "Experience"
+        },
+        {
+          name: "Project"
+        }
+      ]
+    }
+  }
+
+
+  render(){
+    const {buttonType} = this.state;
+    return(
+      <div className='App'>
+          <div className='temp'></div>
+          <Photo />
+          <Contact />
+          <br></br>
+
+          <div id='home'>
+            <LinkButton buttonType={buttonType}/>
+          </div>
+          
+          <Content buttonType={buttonType}/>
+      </div>
+    )
+  }
 }
-
 export default App;

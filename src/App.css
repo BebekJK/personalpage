@@ -1,5 +1,77 @@
+.App{
+  background-image: linear-gradient(to bottom right, #1F271B, #0B4F6C, #145C9E, #CBB9A8, #DCC7BE);
+  background-size: contain;
+  background-repeat:no-repeat;
+  height: 100%;
+}
+
+h1{
+  color: black;
+  font-size: 48px;
+}
+.temp{
+  aspect-ratio: 1/1;
+  width: 10%;
+}
+svg{
+  aspect-ratio: 1/1;
+  width: 4%;
+  height: 24px;
+  margin: 0px 4px;
+}
+path{
+  aspect-ratio: 1/1;
+  width: 20px;
+  height: 20px;
+}
 .App {
   text-align: center;
+  /* font-family: oboto; */
+  /* margin-top: 50px; */
+}
+.photoContainer{
+  display: flex;
+  justify-content: center;
+}
+.contact{
+  color: white;
+  font-weight: bold;
+}
+.myPhoto{
+  aspect-ratio: 1/1;
+  background-image: url('/IMG_6556.JPG');
+  background-position: 50% 40%;
+  background-size: 400%;
+  border: 2px solid white;
+  width: 15%;
+  border-radius: 50%;
+}
+.myPhoto:hover{
+  transition: 1s;
+  transform: scale(2,2);
+  background-image: url("https://thumb.tvonenews.com/thumbnail/2022/06/21/62b17f924c386-ekspresi-megawati-soekarnoputri-saat-mendengar-presiden-jokowi-memujinya-dengan-kata-cantik-di-rakernas-ii-pdip-jakarta-selasa-2162022_665_374.jpg");
+  background-position: 57% 40%;
+  background-size: 250%;
+}
+
+.button{
+  font-size: 36px;
+  border-radius: 0px 15px 0px 15px;
+  padding: 5px;
+  height: 50px;
+  width: 50%;
+  border: none;
+  /* box-shadow: */
+  box-shadow: 0px 5px 5px 1px rgb(0,0,0,0.4);
+}
+.button:hover{
+  box-shadow: 0px 5px 5px 1px rgba(0,0,0,1);
+  font-weight: bold;
+  transform: translateY(-3px);
+}
+
+.buttonContainer{
+  margin: 20px; 
 }
 
 .App-logo {
@@ -12,6 +84,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +108,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+a{
+  /* text-decoration: none; */
+  color: white;
+}
+
+a:hover{
+  color: red;
 }
